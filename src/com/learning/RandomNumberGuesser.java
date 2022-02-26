@@ -1,3 +1,18 @@
+/*
+* Class: CMSC203
+* Instructor: Grigory Grinberg
+* Description: Application that accepts a guess from the user and tells him whether it matches the
+randomly generated number. The application then narrows down the choices according to the user’s guess and prompts
+the user to guess until the user’s guess matches the random number. After the user guessed the number, the program
+gives the user option to repeat the game.
+* Due: 2/28/2022
+* Platform/compiler: MacBook Air
+* I pledge that I have completed the programming assignment independently.
+I have not copied the code from a student or any source.
+I have not given my code to any student.
+ Print your Name here: Ivan Bliznikov
+*/
+
 package com.learning;
 import java.util.*;
 
@@ -9,7 +24,6 @@ public class RandomNumberGuesser {
 	   int lowGuess = 0;
 	   int highGuess = 100;
 	   int numOfIterations = 1;
-	   boolean isValid;
 	   System.out.println("This is a number guessing game. Try guessing number between 1 and 100: ");
 	   Scanner keyboard = new Scanner(System.in);
 	   do {
@@ -18,7 +32,6 @@ public class RandomNumberGuesser {
 	       lowGuess = 0;
 	       highGuess = 100;
            int randNum = RNG.rand();
-           System.out.println("The generated number is (for testing purposes): " + randNum); //For debugging
            System.out.printf("Number of iterations: %d \n", numOfIterations);
            System.out.println("Enter your first guess: ");
 
