@@ -43,7 +43,7 @@ public class RNG {
 	public static boolean inputValidation(int nextGuess, int lowGuess, int highGuess) {
 		//do {
 		boolean rtnValue = true;
-		if (nextGuess>=highGuess || nextGuess<=lowGuess) {
+		if (nextGuess > highGuess || nextGuess < lowGuess) {
 				   System.out.println("   >>> Guess must be between "+lowGuess+" and "+highGuess+
 						   ".  Try again");				   
 				   rtnValue = false;
